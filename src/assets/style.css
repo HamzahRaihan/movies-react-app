@@ -1,0 +1,53 @@
+.background-landing {
+  height: 100vh;
+  background-image: url("../assets/img/movies-collection.jpg") !important;
+  background-size: cover;
+}
+
+.overlay {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.4);
+}
+
+.overlay-trending {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: auto;
+  background: rgb(0, 0, 0, 0.4);
+}
+
+.welcome-message {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.trending {
+  /* background-image: url("../assets/img/movies/spdrmannwh.jpg"); */
+  background-color: rgb(14, 13, 13);
+  background-size: cover;
+}
+
+.movieImage {
+  height: auto;
+}
+
+.movie-search {
+  width: 500px;
+}
+
+.text-truncate {
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
