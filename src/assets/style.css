@@ -51,3 +51,10 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
+
+.detail-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

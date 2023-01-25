@@ -3,6 +3,7 @@ import { getMovieList, searchMovie } from "../Api";
 import { useEffect, useState } from "react";
 import React from "react";
 import { Loading } from "../components/Loading";
+import { Link } from "react-router-dom";
 
 export const LandingPage = () => {
   const [popularMovies, setPopularMovies] = useState([]);
@@ -26,7 +27,9 @@ export const LandingPage = () => {
         <Col md={4} className="mt-5">
           <Card className="bg-dark text-white text-center movieImage">
             <Image src={`${process.env.REACT_APP_BASEIMAGEURL}/${movie.poster_path}`} alt="Card image" />
-            <Card.Title>{movie.title}</Card.Title>
+            <Card.Title>
+              <Link to={`/detail/${movie.id}`}>{movie.title}</Link>
+            </Card.Title>
             <Card.Text className="text-truncate">{movie.overview}</Card.Text>
             <Card.Text>
               Rating: <span style={{ color: "yellow" }}>{movie.vote_average}</span>
