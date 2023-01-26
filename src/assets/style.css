@@ -25,7 +25,16 @@
   height: auto;
   background: rgb(0, 0, 0, 0.4);
 }
-
+.overlay-detail {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100vh;
+  background: rgb(0, 0, 0, 0.7);
+}
 .welcome-message {
   height: 100vh;
   display: flex;
@@ -53,8 +62,6 @@
 }
 
 .detail-wrapper {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 200vh;
+  background-color: black;
 }

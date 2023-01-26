@@ -13,14 +13,13 @@ const App = () => {
         <div className="overlay">
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/detail/">
+              <Route path=":movie_id" element={<Detail />} />
+            </Route>
+            <Route path="/trending" element={<TrendingMovie />} />
           </Routes>
         </div>
-        <Routes>
-          <Route path="/detail/">
-            <Route path=":movie_id" element={<Detail />} />
-          </Route>
-          <Route path="/trending" element={<TrendingMovie />} />
-        </Routes>
+        <Routes></Routes>
       </div>
     </div>
   );

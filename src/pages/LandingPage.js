@@ -1,4 +1,4 @@
-import { Card, Col, Container, Row, Image } from "react-bootstrap";
+import { Card, Col, Container, Row, Image, InputGroup, Form, Button } from "react-bootstrap";
 import { getMovieList, searchMovie } from "../Api";
 import { useEffect, useState } from "react";
 import React from "react";
@@ -46,9 +46,11 @@ export const LandingPage = () => {
       <div className="welcome-message">
         <Container className="text-white d-flex justify-content-center align-item-center ">
           <Row>
-            <Col>
+            <Col md={12}>
               <h3 className="text-center">Search your favorite movies</h3>
-              <input className="movie-search" placeholder="Search Movie..." type="text" onChange={({ target }) => search(target.value)} />
+              <InputGroup className="mb-3">
+                <Form.Control placeholder="Search your movie" onChange={({ target }) => search(target.value)} />
+              </InputGroup>
             </Col>
           </Row>
         </Container>
