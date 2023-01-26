@@ -8,6 +8,7 @@ This project was made using react js and bootstrap for ui.
 - Detail Page
 - Trending Page
 
-### `website has been hosted using netlify`
+# Link to visit the website
+### `https://movietmdb-react-app.netlify.app/`
 
-https://movietmdb-react-app.netlify.app/
+
