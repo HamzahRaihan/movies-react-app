@@ -24,11 +24,11 @@ export const Detail = () => {
   return (
     <div className="detail-wrapper text-white">
       <div className="content" style={{ backgroundImage: `url(${process.env.REACT_APP_BASEIMAGEURL}/${movieDetail.backdrop_path})`, backgroundSize: "cover", height: "80vh" }}>
-        <div className="overlay-detail">
+        <div className="overlay-detail px-3">
           <Container fluid>
             <Row>
               <Col md={3}>
-                <Image className="img-fluid ps-5 mt-5 pt-5 pb-3" src={`${process.env.REACT_APP_BASEIMAGEURL}/${movieDetail.poster_path}`} alt="Card image" />
+                <Image className="img-fluid mt-5 pt-5 pb-3" src={`${process.env.REACT_APP_BASEIMAGEURL}/${movieDetail.poster_path}`} alt="Card image" />
               </Col>
               <Col md={9}>
                 <div className="overview mt-sm-5 pt-md-5 pt-sm-2">
