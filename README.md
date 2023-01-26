@@ -7,3 +7,7 @@ This project was made using react js and bootstrap for ui.
 - Movie Search
 - Detail Page
 - Trending Page
+
+### `website has been hosted using netlify`
+
+https://movietmdb-react-app.netlify.app/
